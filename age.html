@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Calender: Age Calculator</title>
+    </head>
+    <body bgcolor="green">
+        <input id="year" type="number" min="0"/>
+        <button>calculate</button>
+        <script>
+            function calculateAge(){
+                let userInput = document.querySelector('input').value;
+                const currentYear = 2024;
+                let yourAge;
+
+                yourAge = currentYear - userInput
+
+                if (yourAge<=0){
+                alert('your Age cannot be calculated'); }
+                else{alert("Your age is " + yourAge)};
+            }
+
+            let btn = document.querySelector('button');
+            btn.addEventListener('click', calculateAge);
+        </script>
+    </body>
+</html>
